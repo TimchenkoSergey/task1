@@ -1,0 +1,28 @@
+%normal {
+	font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ZurichBTBold";
+    src: url("../fonts/zurichBT/ZurichBTBold.ttf");
+    @extend %normal;
+}
+
+@font-face {
+    font-family: "ZurichBTRoman";
+    src: url("../fonts/zurichBT/ZurichBTRoman.ttf");
+    @extend %normal;
+}
+
+@font-face {
+    font-family: "MyriadProSemiBold";
+    src: url("../fonts/myriadPro/MyriadProSemiBold.ttf");
+    @extend %normal;
+}
+
+@font-face {
+    font-family: "KlavikaMedium-Plain";
+    src: url("../fonts/klavika/KlavikaMedium-Plain.otf");
+    @extend %normal;
+}
