@@ -9,15 +9,18 @@ const gulp       = require("gulp"),
       sourceMaps = require("gulp-sourcemaps"),
       uglify     = require("gulp-uglify"),
       babel      = require("gulp-babel"),
-      imageOptim = require('gulp-image-optimization');
+      imageOptim = require("gulp-imagemin");
 
 gulp.task("css", function() {
-	gulp.src("scss/main.scss")
-	.pipe(sass())
-	.pipe(prefix("last 5 versions","> 1%","ie 9"))
-	.pipe(minify())
-	.pipe(rename("main.min.css"))
-	.pipe(gulp.dest("app/css/"));
+	gulp.src([
+			"node_modules/normalize/normalize.css",
+			"scss/main.scss"
+		])
+		.pipe(sass())
+		.pipe(concat("main.min.css"))
+		.pipe(prefix("last 5 versions","> 1%","ie 9"))
+		.pipe(minify())
+		.pipe(gulp.dest("app/css/"));
 });
 
 gulp.task("js", function () {
@@ -33,17 +36,13 @@ gulp.task("js", function () {
 		.pipe(gulp.dest("app/js/"));
 });
 
-gulp.task('images', function(cb) {
+gulp.task("images", function(cb) {
     gulp.src([
     		"img/*.png",
     		"img/*.jpg"
     	]).
-	    pipe(imageop({
-	        optimizationLevel: 5,
-	        progressive: true,
-	        interlaced: true
-	    }))
-	    .pipe(gulp.dest('app/img'));
+	    pipe(imageOptim())
+	    .pipe(gulp.dest("app/img/"));
 });
 
 gulp.task("watch", function() {

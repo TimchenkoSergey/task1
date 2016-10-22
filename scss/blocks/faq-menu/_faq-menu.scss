@@ -1,0 +1,27 @@
+.faq-menu {
+	padding-top: 12px;
+	
+	&__list {
+		margin: 0;
+		padding: 0;
+
+		list-style: none;
+	}
+
+	&__item {
+		display: inline-block;
+		padding-left: 10px;
+	}
+
+	&__link {
+		color: #209a28;
+		font-family: $myriad;
+		font-size: 12px;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

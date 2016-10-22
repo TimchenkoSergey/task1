@@ -1,4 +1,14 @@
 @import "fonts";
 @import "variables";
 
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
 //imports blocks
+@import "blocks/page/_page";
+@import "blocks/header/_header";
+@import "blocks/logo/_logo";
+@import "blocks/faq-menu/_faq-menu";
+@import "blocks/main-nav/_main-nav";

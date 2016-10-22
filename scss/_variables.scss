@@ -7,3 +7,9 @@ $klavika : "KlavikaMedium-Plain", sans-serif;
 //text size and line-height
 $tz : 12px;
 $tl : 18px;
+
+//bg colors for old browsers and bg gradients for new
+$green : #0c932f;
+$brown : #6f685e;
+$greenG : linear-gradient(to top, #0c932f, #81de41);
+$brownG : linear-gradient(to top, #6f685e, #999387);

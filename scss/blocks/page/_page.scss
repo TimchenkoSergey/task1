@@ -1,0 +1,9 @@
+.page {
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+
+	&__wrap {
+		max-width: 990px;
+		margin: 0 auto;
+	}
+}

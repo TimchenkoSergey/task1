@@ -1,0 +1,47 @@
+.header {
+
+	&__top {
+		padding-top: 15px;
+
+		&::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+	}
+
+	&__left {
+		width: 50%;
+		float: left;
+	}
+
+	&__link {
+		display: block;
+
+		text-decoration: none;
+	}
+
+	&__right {
+		width: 50%;
+		float: left;
+
+		text-align: right;
+	}
+
+	&__title {
+		margin: 0;
+		
+		color: #585755;
+		font-family: $myriad;
+		font-size: 12px;
+	}
+
+	&__phone-number {
+		margin: 0;
+		margin-top: 2px;
+
+		color: #373737;
+		font-family: $myriad;
+		font-size: 20px;
+	}
+}
