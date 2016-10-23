@@ -24,13 +24,13 @@ gulp.task("css", function() {
 });
 
 gulp.task("js", function () {
-	gulp.src(["js/*"])
+	gulp.src(["js/*.js"])
 		.pipe(sourceMaps.init())
-		.pipe(babel({
-			presets: ["es2015"]
-		}))
+		//.pipe(babel({
+		//	presets: ["es2015"]
+		//}))
 		.pipe(concat("app.js"))
-		.pipe(uglify())
+		//.pipe(uglify())
 		.pipe(rename("main.min.js"))
 		.pipe(sourceMaps.write())
 		.pipe(gulp.dest("app/js/"));

@@ -1,0 +1,23 @@
+.main-content {
+	margin-top: 9px;
+
+	background-color: #fff;
+
+	border-radius: 5px;
+
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	&__wrap {
+		width: calc((739*100%)/990);
+		float: left;
+	}
+
+	&__aside {
+		width: calc((251*100%)/990);
+		float: left;
+	}
+}

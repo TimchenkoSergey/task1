@@ -6,4 +6,19 @@
 		max-width: 990px;
 		margin: 0 auto;
 	}
+
+	&__link {
+		display: block;
+		padding-top: 14px;
+		padding-left: 24px;
+
+		color: #14961c;
+		font-family: $myriad;
+		font-size: 12px;
+		text-shadow: 1px 1px 0px #fff;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
