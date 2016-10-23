@@ -1,0 +1,36 @@
+.tour-info {
+	padding-top: 3px;
+	padding-left: 17px;
+	position: relative;
+
+	&__head {
+ 		margin-bottom: 9px;
+
+		color: #444137;
+		font-family: $zurichR;
+		font-size: 26px;
+		text-transform: uppercase;
+		font-weight: 200;
+		word-spacing: 2px;
+	}
+
+	&__description {
+		max-width: 425px;
+		padding-bottom: 17px;
+		
+		color: #595447;
+		font-family: "Arial", sans-serif;
+		font-size: 12px;
+		line-height: 20px;
+	}
+
+	&__link {
+		color: #28b028;
+	}
+
+	&__img {
+		position: absolute;
+		right: 62px;
+		bottom: 0;
+	}
+}

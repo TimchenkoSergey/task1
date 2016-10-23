@@ -4,6 +4,7 @@
 	const navigationList = document.getElementById("navigation"),
 	  	  linksList      = navigationList.getElementsByTagName("a"),
 	  	  sliderElement  = document.getElementById("slider"),
+	  	  photographImg  = document.getElementById("photo"),
 		  slidesImages   = ["img/slide1.jpg",
 		  				    "img/slide2.jpg",
 		  				    "img/slide1.jpg",
@@ -22,12 +23,22 @@
 		const numberSlide = this.innerHTML - 1;
 
 		deleteActiveClass();
+		setPhotographImg(numberSlide);
 		setSliderImage(numberSlide);
 		linksList[numberSlide].classList.add("active");
 	}
 
 	function setSliderImage(index) {
 		sliderElement.style.backgroundImage = `url(${slidesImages[index]})`;
+	}
+
+	function setPhotographImg(index) {
+		if ((index + 1) % 2 === 0) {
+			photographImg.src = "img/photo2.png";
+		}
+		else {
+			photographImg.src = "img/photo1.png";
+		}
 	}
 
 	function deleteActiveClass() {
