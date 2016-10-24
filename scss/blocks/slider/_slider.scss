@@ -53,14 +53,14 @@
 		margin-bottom: 0;
 
 		color: #fff;
-		font-family: "Arial", sans-serif;
+		font-family: $arial;
 		font-size: 12px;
 		line-height: 18px;
 	}
 
 	&__link {
 		color: #28b028;
-		font-family: "Arial", sans-serif;
+		font-family: $arial;
 		font-size: 12px;
 		text-decoration: none;
 	}

@@ -20,6 +20,8 @@
 	}
 
 	function setSlide(event) {
+		event.preventDefault();
+		
 		const numberSlide = this.innerHTML - 1;
 
 		deleteActiveClass();
